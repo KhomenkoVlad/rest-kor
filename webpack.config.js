@@ -7,15 +7,18 @@ module.exports = function (env) {
   let production = !env || env.NODE_ENV === 'production';
   const config = {
     mode: production ? 'production' : 'development',
-    entry: ['./src/index.js', './src/style.scss'],
+    entry: ['./src/index.jsx', './src/style.scss'],
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'main.js'
     },
+    resolve: {
+      extensions: ['.js', '.jsx'],
+    },
     module: {
       rules: [
         {
-          test: /\.js$/,
+          test: /\.jsx?$/,
           exclude: /node_modules/,
           use: ['babel-loader']
         },
