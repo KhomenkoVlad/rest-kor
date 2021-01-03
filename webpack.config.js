@@ -10,10 +10,13 @@ module.exports = function (env) {
     entry: ['./src/index.jsx', './src/style.scss'],
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'main.js'
+      filename: 'main.js',
     },
     resolve: {
       extensions: ['.js', '.jsx'],
+    },
+    devServer: {
+      historyApiFallback: true,
     },
     module: {
       rules: [
@@ -21,6 +24,13 @@ module.exports = function (env) {
           test: /\.jsx?$/,
           exclude: /node_modules/,
           use: ['babel-loader']
+        },
+        {
+          test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+          type: 'asset/resource',
+          generator: {
+            filename: 'assets/[hash][ext]'
+          },
         },
         {
           test: /\.s[ac]ss$/,

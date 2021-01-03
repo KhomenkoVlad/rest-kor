@@ -6,8 +6,9 @@ import {
 } from 'react-router-dom'
 
 import { Header } from './header/header';
+import { Main } from './main/main';
 
-const Page = ({children}) =>
+const Page = ({ children }) =>
   <>
     <Header />
     {children}
@@ -15,7 +16,7 @@ const Page = ({children}) =>
 
 const HomePage = () =>
   <Page>
-    <h1>Home</h1>
+    <Main />
   </Page>
 
 const MenuPage = () =>
