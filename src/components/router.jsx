@@ -39,7 +39,7 @@ window.React = React;
 export const App = () =>
   <BrowserRouter>
     <Route exact path='/' component={HomePage} />
-    <Route path='/menu' component={MenuPage} />
-    <Route path='/about' component={AboutPage} />
-    <Route path='/contact' component={ContactPage} />
+    <Route exact path='/menu' component={MenuPage} />
+    <Route exact path='/about' component={AboutPage} />
+    <Route exact path='/contact' component={ContactPage} />
   </BrowserRouter>
