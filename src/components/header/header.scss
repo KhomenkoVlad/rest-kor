@@ -1,25 +1,32 @@
-.header{
+.header {
   width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-.menu{
+.menu {
   list-style: none;
   margin: auto;
   padding: 0;
   width: fit-content;
 }
 
-.menu__item{
+.menu__item {
   display: inline-block;
   height: 100%;
 }
 
-.menu__item:hover{
-  background-color: bisque;
+.menu__item:hover {
+  background-color:  rgba(0, 0, 0, 0.5);
 }
 
-.menu__link{
+.menu__link {
   text-decoration: none;
   display: block;
-  padding: 10px 20px;
+  padding: 15px 25px;
+  color: white;
+  font-style: "Roboto";
+  font-weight: 100;
+  font-size: 15px;
 }

@@ -1,7 +1,12 @@
-@import 'components/header/header.scss';
-@import 'components/main/main.scss';
+@import "components/header/header.scss";
+@import "components/main/main.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 * {
   padding: 0;
   margin: 0;
+}
+
+body{
+  font-family: 'Roboto',Arial,Helvetica,sans-serif;
 }
