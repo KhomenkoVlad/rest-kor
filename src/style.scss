@@ -1,12 +1,21 @@
-@import "components/header/header.scss";
-@import "components/main/main.scss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+$navigation__link_active_color: rgb(255, 167, 36);
 
 * {
-  padding: 0;
-  margin: 0;
+  box-sizing: border-box;
 }
 
 body{
+  margin: 0;
   font-family: 'Roboto',Arial,Helvetica,sans-serif;
 }
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+
+@import "components/header/header.scss";
+@import "components/main/main.scss";
+@import "components/main/background/background.scss";
+@import "components/main/quickMenu/quickMenu.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');

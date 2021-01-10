@@ -3,4 +3,7 @@ import ReactDOM from 'react-dom';
 
 import { App } from './components/router';
 
-ReactDOM.render(<App />, document.body);
+let reactApp = document.createElement("div");
+document.body.appendChild(reactApp);
+
+ReactDOM.render(<App />, reactApp);
