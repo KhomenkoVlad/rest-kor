@@ -1,0 +1,37 @@
+.main-about{
+  background-color: rgba($navigation__link_active_color, 0.8);
+  border-top: black solid 4px;
+  border-bottom: black solid 4px;
+  text-align: center;
+}
+
+.main-about__description{
+  max-width: 1260px;
+  margin: auto;
+  padding: 20px;
+}
+
+.main-about__caption{
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.main-about__button{
+  display: flex;
+  text-decoration: none;
+  border: black solid 4px;
+  color: black;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+  transition: all 0.15s;
+}
+
+.main-about__button-caption{
+  margin: auto;
+}
+
+.main-about__button:hover{
+  border: black solid 8px;
+}

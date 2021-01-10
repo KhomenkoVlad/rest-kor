@@ -4,12 +4,11 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 400px));
   grid-gap: 1rem;
-  padding: 30px;
+  padding: 20px;
 }
 
 .quick-menu__caption {
   text-align: center;
-  padding: 10px;
   grid-column: 1 / -1;
 }
 
