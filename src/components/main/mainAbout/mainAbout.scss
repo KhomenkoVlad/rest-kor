@@ -1,22 +1,15 @@
-.main-about{
-  background-color: rgba($navigation__link_active_color, 0.8);
-  border-top: black solid 4px;
-  border-bottom: black solid 4px;
-  text-align: center;
-}
-
-.main-about__description{
+.main-about__description {
   max-width: 1260px;
   margin: auto;
   padding: 20px;
 }
 
-.main-about__caption{
+.main-about__caption {
   text-align: center;
   margin-bottom: 0;
 }
 
-.main-about__button{
+.main-about__button {
   display: flex;
   text-decoration: none;
   border: black solid 4px;
@@ -28,10 +21,29 @@
   transition: all 0.15s;
 }
 
-.main-about__button-caption{
+.main-about__button-caption {
   margin: auto;
 }
 
-.main-about__button:hover{
+.main-about__button:hover {
   border: black solid 8px;
+}
+
+@media screen and (max-width: 700px) {
+  .main-about__caption {
+    font-size: 15px;
+  }
+  .main-about__description {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .main-about__button {
+    font-size: 12px;
+    width: 120px;
+    height: 30px;
+    border: black solid 3px;
+  }
+  .main-about__button:hover {
+    border: black solid 5px;
+  }
 }

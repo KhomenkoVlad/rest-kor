@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 400px));
   grid-gap: 1rem;
-  padding: 20px;
+  padding: 0 20px 30px 20px;
 }
 
 .quick-menu__caption {
@@ -38,12 +38,11 @@
   .quick-menu {
     grid-template-columns: repeat(3, minmax(100px, 250px));
     grid-gap: 0.5rem;
-    padding: 15px;
+    padding: 0 10px 10px;
   }
   .quick-menu__caption {
     text-align: center;
     font-size: 15px;
-    padding: 5px;
   }
   .quick-menu__link {
     height: 100px;

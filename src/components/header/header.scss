@@ -1,9 +1,8 @@
-
 .header {
   width: 100%;
   position: fixed;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navigation {
@@ -44,7 +43,7 @@
   border-bottom: $navigation__link_active_color solid 4px;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 700px){
   .navigation__link{
     padding: 10px 15px 6px;
     font-size: 10px;
