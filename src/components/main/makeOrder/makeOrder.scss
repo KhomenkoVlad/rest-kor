@@ -1,0 +1,27 @@
+.make-order-item__caption {
+  display: inline;
+}
+
+.make-order-item__link {
+  padding: 5px;
+  color: black;
+}
+
+.make-order-item{
+  padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .make-order__caption {
+    font-size: 15px;
+  }
+  .make-order-item__link {
+    display: block;
+  }
+  .make-order-item__caption {
+    font-size: 12px;
+  }
+  .make-order-item__link {
+    font-size: 15px;
+  }
+}

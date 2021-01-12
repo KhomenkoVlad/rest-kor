@@ -14,9 +14,17 @@ body{
   color: white;
 }
 
+.orange-background{
+  background-color: rgba($navigation__link_active_color, 0.8);
+  border-top: black solid 4px;
+  border-bottom: black solid 4px;
+  text-align: center;
+}
+
 @import "components/header/header.scss";
 @import "components/main/main.scss";
 @import "components/main/background/background.scss";
 @import "components/main/quickMenu/quickMenu.scss";
 @import "components/main/mainAbout/mainAbout.scss";
+@import "components/main/makeOrder/makeOrder.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
