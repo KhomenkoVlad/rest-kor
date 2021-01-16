@@ -1,10 +1,10 @@
 .quick-menu {
-  max-width: 1260px;
+  max-width: $full-width;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 400px));
   grid-gap: 1rem;
-  padding: 0 20px 30px 20px;
+  padding: 0 10px 30px;
 }
 
 .quick-menu__caption {
@@ -34,7 +34,7 @@
   color: $navigation__link_active_color;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: $middle-width) {
   .quick-menu {
     grid-template-columns: repeat(3, minmax(100px, 250px));
     grid-gap: 0.5rem;
@@ -46,20 +46,19 @@
   }
   .quick-menu__link {
     height: 100px;
-    font-size: 15px;
+    font-size: 17px;
   }
   .quick-menu__text {
     padding: 10px 0;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: $minimal-width) {
   .quick-menu {
     grid-template-columns: repeat(2, minmax(50px, 250px));
   }
   .quick-menu__link {
-    height: 75px;
-    font-size: 12px;
+    font-size: 15px;
   }
   .quick-menu__text {
     padding: 7px 0;

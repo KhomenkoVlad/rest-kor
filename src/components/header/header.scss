@@ -43,9 +43,16 @@
   border-bottom: $navigation__link_active_color solid 4px;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: $middle-width){
   .navigation__link{
     padding: 10px 15px 6px;
-    font-size: 10px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: $minimal-width){
+  .navigation__link{
+    padding: 10px 11px 6px;
+    font-size: 11px;
   }
 }

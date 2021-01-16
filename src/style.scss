@@ -1,4 +1,8 @@
 $navigation__link_active_color: rgb(255, 167, 36);
+$main-background: rgb(0, 33, 59);
+$full-width: 1260px;
+$middle-width: 800px;
+$minimal-width: 400px;
 
 * {
   box-sizing: border-box;
@@ -14,11 +18,10 @@ body{
   color: white;
 }
 
-.orange-background{
-  background-color: rgba($navigation__link_active_color, 0.8);
-  border-top: black solid 4px;
-  border-bottom: black solid 4px;
-  text-align: center;
+.section-wraper{
+  max-width: $full-width;
+  margin: auto;
+  padding: 20px 10px;
 }
 
 @import "components/header/header.scss";
@@ -27,4 +30,5 @@ body{
 @import "components/main/quickMenu/quickMenu.scss";
 @import "components/main/mainAbout/mainAbout.scss";
 @import "components/main/makeOrder/makeOrder.scss";
+@import "components/footer/footer.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');

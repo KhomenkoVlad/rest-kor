@@ -1,19 +1,37 @@
-.main-about__description {
-  max-width: 1260px;
-  margin: auto;
-  padding: 20px;
+.main-about {
+  background-color: $main-background;
+  border-top: black solid 4px;
+  border-bottom: black solid 4px;
+  color: bisque;
+}
+
+.main-about__image {
+  float: left;
+  clear: both;
+  width: 50%;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+.main-about__description{
+  text-align: justify;
+}
+
+.main-about__wrap::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .main-about__caption {
   text-align: center;
-  margin-bottom: 0;
 }
 
 .main-about__button {
   display: flex;
   text-decoration: none;
-  border: black solid 4px;
-  color: black;
+  border: bisque solid 4px;
+  color: bisque;
   width: 200px;
   height: 50px;
   margin: auto;
@@ -26,24 +44,37 @@
 }
 
 .main-about__button:hover {
-  border: black solid 8px;
+  border: bisque solid 8px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: $middle-width) {
   .main-about__caption {
     font-size: 15px;
   }
   .main-about__description {
-    font-size: 12px;
-    padding: 10px;
+    font-size: 14px;
   }
   .main-about__button {
     font-size: 12px;
     width: 120px;
     height: 30px;
-    border: black solid 3px;
+    border: bisque solid 3px;
   }
   .main-about__button:hover {
-    border: black solid 5px;
+    border: bisque solid 5px;
+  }
+}
+
+@media screen and (max-width: $minimal-width) {
+  .main-about__caption {
+    font-size: 12px;
+  }
+  .main-about__description {
+    font-size: 13px;
+  }
+  .main-about__image {
+    float: none;
+    width: 100%;
+    padding-right: 0;
   }
 }

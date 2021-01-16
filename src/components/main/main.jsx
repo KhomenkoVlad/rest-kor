@@ -2,6 +2,7 @@ import { Background } from './background/background';
 import { QuickMenu } from './quickMenu/quickMenu';
 import { MainAbout } from './mainAbout/mainAbout';
 import { MakeOrder } from './makeOrder/makeOrder';
+import { Footer } from '../footer/footer';
 
 export const Main = () =>
   <>
@@ -10,7 +11,7 @@ export const Main = () =>
       <section className='layer content'>
         <MainAbout />
         <QuickMenu />
-        <MakeOrder />
+        <Footer />
       </section>
     </main>
   </>
