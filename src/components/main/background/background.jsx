@@ -1,5 +1,6 @@
 import { mainImages } from '../../../assets/images';
 
+
 export const Background = () =>
   <>
     <section className='layer background'>

@@ -25,10 +25,13 @@ body{
 }
 
 @import "components/header/header.scss";
+@import "components/footer/footer.scss";
 @import "components/main/main.scss";
 @import "components/main/background/background.scss";
 @import "components/main/quickMenu/quickMenu.scss";
 @import "components/main/mainAbout/mainAbout.scss";
 @import "components/main/makeOrder/makeOrder.scss";
-@import "components/footer/footer.scss";
+@import "components/menu/menu.scss";
+@import "components/menu/catalog/catalog.scss";
+@import "components/menu/sideNav/sideNav.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');

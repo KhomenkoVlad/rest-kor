@@ -1,0 +1,15 @@
+.menu{
+  max-width: $full-width;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  background-color: burlywood;
+}
+
+/*.menu::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 48px;
+}*/

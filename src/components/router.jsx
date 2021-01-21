@@ -2,25 +2,38 @@ import React from 'react';
 import {
   BrowserRouter,
   Route,
+  Switch,
 } from 'react-router-dom'
 
 import { Header } from './header/header';
+import { Footer } from './footer/footer';
 import { Main } from './main/main';
+import { SideNav } from './menu/sideNav/sideNav';
+import { Catalog } from './menu/catalog/catalog';
 
 const Page = ({ children }) =>
   <>
     <Header />
     {children}
+    <Footer />
   </>
 
 const HomePage = () =>
-  <Page>
+  <>
+    <Header />
     <Main />
-  </Page>
+  </>
 
 const MenuPage = () =>
   <Page>
-    <h1>MenuPage</h1>
+    <main className='menu'>
+      <SideNav />
+      <section className='menu-catalog'>
+        <Route exact path="/menu" />
+        <Route path="/menu/1" component={() => Catalog('111111')} />
+        <Route path="/menu/2" component={() => Catalog('222222')} />
+      </section>
+    </main>
   </Page>
 
 const AboutPage = () =>
@@ -38,7 +51,7 @@ window.React = React;
 export const App = () =>
   <BrowserRouter>
     <Route exact path='/' component={HomePage} />
-    <Route exact path='/menu' component={MenuPage} />
+    <Route path='/menu' component={MenuPage} />
     <Route exact path='/about' component={AboutPage} />
     <Route exact path='/contact' component={ContactPage} />
   </BrowserRouter>

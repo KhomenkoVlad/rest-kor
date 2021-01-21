@@ -9,7 +9,8 @@
   list-style: none;
   margin: auto;
   padding: 0;
-  width: fit-content;
+  display: flex;
+  justify-content: center;
 }
 
 .navigation__item {
