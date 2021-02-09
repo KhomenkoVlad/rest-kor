@@ -16,10 +16,10 @@ module.exports = function (env) {
       extensions: ['.js', '.jsx'],
     },
     devServer: {
+      disableHostCheck: true,
       historyApiFallback: {
         index: '/index.html'
-      }
-
+      },
     },
     module: {
       rules: [

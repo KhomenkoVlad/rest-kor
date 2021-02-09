@@ -3,18 +3,19 @@ import { QuickMenu } from './quickMenu/quickMenu';
 import { MainAbout } from './mainAbout/mainAbout';
 import { MakeOrder } from './makeOrder/makeOrder';
 import { Footer } from '../footer/footer';
+import { Header } from '../header/header';
 
 
-export const Main = () =>
+export const Home = () =>
   <>
-    <main className='layer-main'>
+    <div className='layer-main'>
     <Background />
-    <section className='layer content'>
+    <main className='layer content'>
       <MainAbout />
       <QuickMenu />
       <Footer />
-    </section>
     </main>
+    </div>
     {mainScript()}
   </>
 

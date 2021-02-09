@@ -1,15 +1,13 @@
 .quick-menu {
   max-width: $full-width;
   margin: auto;
+}
+
+.quick-menu_wrapper{
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 400px));
   grid-gap: 1rem;
-  padding: 0 10px 30px;
-}
-
-.quick-menu__caption {
-  text-align: center;
-  grid-column: 1 / -1;
+  padding: 0 0.6em 1em;
 }
 
 .quick-menu__link {
@@ -18,14 +16,14 @@
   background-size: cover;
   display: flex;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5rem;
   transition: all 0.15s;
 }
 
 .quick-menu__text {
   background-color: rgba(black, 0.6);
   width: 100%;
-  padding: 20px 0;
+  padding: 0.8em 0;
   margin: auto;
 }
 
@@ -35,32 +33,18 @@
 }
 
 @media screen and (max-width: $middle-width) {
-  .quick-menu {
+  .quick-menu_wrapper {
     grid-template-columns: repeat(3, minmax(100px, 250px));
     grid-gap: 0.5rem;
-    padding: 0 10px 10px;
-  }
-  .quick-menu__caption {
-    text-align: center;
-    font-size: 15px;
   }
   .quick-menu__link {
     height: 100px;
-    font-size: 17px;
-  }
-  .quick-menu__text {
-    padding: 10px 0;
+    font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: $minimal-width) {
-  .quick-menu {
+  .quick-menu_wrapper {
     grid-template-columns: repeat(2, minmax(50px, 250px));
-  }
-  .quick-menu__link {
-    font-size: 15px;
-  }
-  .quick-menu__text {
-    padding: 7px 0;
   }
 }

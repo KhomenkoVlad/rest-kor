@@ -25,17 +25,12 @@ export const Footer = () =>
           <a className='footer__item-link' href="https://google.com">www.google.com</a>
         </p>
       </div>
-      <div className='footer__item'>
-        <p>
-          <span className="footer__social">
-            <a className='footer__item-link ' href="https://google.com"><i className="fab fa-facebook"></i></a>
-            <a className='footer__item-link' href="https://google.com"><i className="fab fa-viber"></i></a>
-          </span>
-          <span className="footer__social">
-            <a className='footer__item-link' href="https://google.com"><i className="fab fa-telegram"></i></a>
-            <a className='footer__item-link' href="https://google.com"><i className="fab fa-instagram"></i></a>
-          </span>
-        </p>
+      <div className='footer__social-items'>
+            <a className='footer__item-link footer__social-link' href="https://google.com"><i className="fab fa-facebook"></i></a>
+            <a className='footer__item-link footer__social-link' href="https://google.com"><i className="fab fa-viber"></i></a>
+            <a className='footer__item-link footer__social-link' href="https://google.com"><i className="fab fa-telegram"></i></a>
+            <a className='footer__item-link footer__social-link' href="https://google.com"><i className="fab fa-instagram"></i></a>
+        
       </div>
     </div>
   </footer>

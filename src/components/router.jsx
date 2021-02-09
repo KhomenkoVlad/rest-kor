@@ -5,9 +5,9 @@ import {
   Switch,
 } from 'react-router-dom'
 
-import { Header } from './header/header';
+import { Header, HeaderHome } from './header/header';
 import { Footer } from './footer/footer';
-import { Main } from './main/main';
+import { Home } from './main/main';
 import { SideNav } from './menu/sideNav/sideNav';
 import { Catalog } from './menu/catalog/catalog';
 
@@ -20,8 +20,8 @@ const Page = ({ children }) =>
 
 const HomePage = () =>
   <>
-    <Header />
-    <Main />
+    <HeaderHome />
+    <Home />
   </>
 
 const MenuPage = () =>

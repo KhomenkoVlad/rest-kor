@@ -9,8 +9,8 @@
   float: left;
   clear: both;
   width: 50%;
-  padding-right: 20px;
-  padding-bottom: 5px;
+  padding-right: 1.25em;
+  padding-bottom: 0.4em;
 }
 
 .main-about__description{
@@ -23,19 +23,14 @@
   clear: both;
 }
 
-.main-about__caption {
-  text-align: center;
-}
-
 .main-about__button {
   display: flex;
   text-decoration: none;
-  border: bisque solid 4px;
+  border: bisque solid 0.25em;
   color: bisque;
-  width: 200px;
+  width: 150px;
   height: 50px;
   margin: auto;
-  margin-bottom: 20px;
   transition: all 0.15s;
 }
 
@@ -44,34 +39,10 @@
 }
 
 .main-about__button:hover {
-  border: bisque solid 8px;
-}
-
-@media screen and (max-width: $middle-width) {
-  .main-about__caption {
-    font-size: 15px;
-  }
-  .main-about__description {
-    font-size: 14px;
-  }
-  .main-about__button {
-    font-size: 12px;
-    width: 120px;
-    height: 30px;
-    border: bisque solid 3px;
-  }
-  .main-about__button:hover {
-    border: bisque solid 5px;
-  }
+  border: bisque solid 0.5em;
 }
 
 @media screen and (max-width: $minimal-width) {
-  .main-about__caption {
-    font-size: 12px;
-  }
-  .main-about__description {
-    font-size: 13px;
-  }
   .main-about__image {
     float: none;
     width: 100%;

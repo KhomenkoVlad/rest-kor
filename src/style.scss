@@ -8,20 +8,39 @@ $minimal-width: 400px;
   box-sizing: border-box;
 }
 
-body{
-  margin: 0;
-  font-family: 'Roboto',Arial,Helvetica,sans-serif;
+:root {
+  font-size: 1em;
+}
+@media screen and (max-width: $middle-width) {
+  :root {
+    font-size: 0.9375em;
+  }
+}
+@media screen and (max-width: $minimal-width) {
+  :root {
+    font-size: 0.875em;
+  }
 }
 
-.link{
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.link {
   text-decoration: none;
   color: white;
 }
 
-.section-wraper{
+.section-wraper {
   max-width: $full-width;
   margin: auto;
-  padding: 20px 10px;
+  padding: 1.3em 0.65em;
+}
+
+.caption{
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 @import "components/header/header.scss";
@@ -34,4 +53,4 @@ body{
 @import "components/menu/menu.scss";
 @import "components/menu/catalog/catalog.scss";
 @import "components/menu/sideNav/sideNav.scss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
