@@ -1,0 +1,17 @@
+.about{
+  height: 3000px;
+  //background-color: rgba(blue, 0.3);
+}
+
+.about-background {
+}
+
+.about-background__capture {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: calc(2vw + 4em);
+  padding-bottom: calc(1vw + 3em);
+  margin: 0;
+  color: orange;
+}

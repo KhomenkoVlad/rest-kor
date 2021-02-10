@@ -1,11 +1,11 @@
-.main-about {
-  background-color: $main-background;
+.home-about {
+  background-color: $dark-background-color;
   border-top: black solid 4px;
   border-bottom: black solid 4px;
-  color: bisque;
+  color: $text-color-of-dark-background;
 }
 
-.main-about__image {
+.home-about__image {
   float: left;
   clear: both;
   width: 50%;
@@ -13,37 +13,37 @@
   padding-bottom: 0.4em;
 }
 
-.main-about__description{
+.home-about__description{
   text-align: justify;
 }
 
-.main-about__wrap::after {
+.home-about__wrap::after {
   content: "";
   display: block;
   clear: both;
 }
 
-.main-about__button {
+.home-about__button {
   display: flex;
   text-decoration: none;
-  border: bisque solid 0.25em;
-  color: bisque;
+  border: $text-color-of-dark-background solid 0.25em;
+  color: $text-color-of-dark-background;
   width: 150px;
   height: 50px;
   margin: auto;
   transition: all 0.15s;
 }
 
-.main-about__button-caption {
+.home-about__button-caption {
   margin: auto;
 }
 
-.main-about__button:hover {
-  border: bisque solid 0.5em;
+.home-about__button:hover {
+  border: $text-color-of-dark-background solid 0.5em;
 }
 
 @media screen and (max-width: $minimal-width) {
-  .main-about__image {
+  .home-about__image {
     float: none;
     width: 100%;
     padding-right: 0;

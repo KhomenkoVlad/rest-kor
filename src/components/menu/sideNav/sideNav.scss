@@ -42,7 +42,7 @@
 }
 
 .menu-side-nav__link_active .menu-side-nav__link-area{
-  background-color: rgba($navigation__link_active_color, 0.3);
+  background-color: rgba($bright-action-color, 0.3);
 }
 
 .menu-side-nav__link-area {
@@ -54,7 +54,7 @@
 }
 
 .menu-side-nav__link-area:hover{
-  background-color: rgba($navigation__link_active_color, 0.3);
+  background-color: rgba($bright-action-color, 0.3);
 }
 
 .menu-side-nav__link-caption {
@@ -104,7 +104,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $main-background;
+    background-color: $dark-background-color;
     color: white;
     font-size: 11px;
     transition: all 0.5s;

@@ -1,16 +1,16 @@
-.quick-menu {
+.home-menu {
   max-width: $full-width;
   margin: auto;
 }
 
-.quick-menu_wrapper{
+.home-menu_wrapper{
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 400px));
   grid-gap: 1rem;
   padding: 0 0.6em 1em;
 }
 
-.quick-menu__link {
+.home-menu__link {
   height: 200px;
   background-position: center center;
   background-size: cover;
@@ -20,31 +20,31 @@
   transition: all 0.15s;
 }
 
-.quick-menu__text {
+.home-menu__text {
   background-color: rgba(black, 0.6);
   width: 100%;
   padding: 0.8em 0;
   margin: auto;
 }
 
-.quick-menu__link:hover {
-  border: $navigation__link_active_color solid 8px;
-  color: $navigation__link_active_color;
+.home-menu__link:hover {
+  border: $bright-action-color solid 8px;
+  color: $bright-action-color;
 }
 
 @media screen and (max-width: $middle-width) {
-  .quick-menu_wrapper {
+  .home-menu_wrapper {
     grid-template-columns: repeat(3, minmax(100px, 250px));
     grid-gap: 0.5rem;
   }
-  .quick-menu__link {
+  .home-menu__link {
     height: 100px;
     font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: $minimal-width) {
-  .quick-menu_wrapper {
+  .home-menu_wrapper {
     grid-template-columns: repeat(2, minmax(50px, 250px));
   }
 }

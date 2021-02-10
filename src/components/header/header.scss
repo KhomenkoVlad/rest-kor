@@ -45,13 +45,13 @@
 
 .navigation__link_active {
   background-color:  rgba(0, 0, 0, 0.3);
-  border-bottom: $navigation__link_active_color solid 4px;
-  color: $navigation__link_active_color;
+  border-bottom: $bright-action-color solid 4px;
+  color: $bright-action-color;
   box-sizing: border-box;
 }
 
 .navigation__link_active:hover {
-  border-bottom: $navigation__link_active_color solid 4px;
+  border-bottom: $bright-action-color solid 4px;
 }
 
 @media screen and (max-width: $minimal-width){

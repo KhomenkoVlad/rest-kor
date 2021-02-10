@@ -1,0 +1,18 @@
+.home-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-background__logo {
+  position: relative;
+  height: 150px;
+}
+
+.home-background__caption {
+  position: relative;
+  text-align: center;
+  color: white;
+}

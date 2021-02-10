@@ -1,5 +1,6 @@
-$navigation__link_active_color: rgb(255, 167, 36);
-$main-background: rgb(0, 33, 59);
+$bright-action-color: rgb(255, 167, 36);
+$dark-background-color: rgb(0, 33, 59);
+$text-color-of-dark-background: bisque;
 $full-width: 1260px;
 $middle-width: 800px;
 $minimal-width: 400px;
@@ -32,6 +33,10 @@ body {
   color: white;
 }
 
+.content {
+  background-color: white;
+}
+
 .section-wraper {
   max-width: $full-width;
   margin: auto;
@@ -43,14 +48,26 @@ body {
   font-size: 1.5rem;
 }
 
+.background-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+}
+
 @import "components/header/header.scss";
 @import "components/footer/footer.scss";
-@import "components/main/main.scss";
-@import "components/main/background/background.scss";
-@import "components/main/quickMenu/quickMenu.scss";
-@import "components/main/mainAbout/mainAbout.scss";
-@import "components/main/makeOrder/makeOrder.scss";
+@import "components/home/home.scss";
+@import "components/home/homeMenu/homeMenu.scss";
+@import "components/home/homeAbout/homeAbout.scss";
+@import "components/home/makeOrder/makeOrder.scss";
 @import "components/menu/menu.scss";
 @import "components/menu/catalog/catalog.scss";
 @import "components/menu/sideNav/sideNav.scss";
+@import "components/about/about.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");

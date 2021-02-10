@@ -1,0 +1,10 @@
+.menu-catalog {
+  width: 70%;
+  height: 3000px;
+}
+
+@media screen and (max-width: $middle-width) {
+  .menu-catalog {
+    width: 100%;
+  }
+}

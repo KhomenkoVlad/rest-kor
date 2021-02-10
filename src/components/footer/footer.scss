@@ -1,7 +1,7 @@
 .footer {
-  background-color: $main-background;
+  background-color: $dark-background-color;
   border-top: black solid 4px;
-  color: bisque;
+  color: $text-color-of-dark-background;
 }
 
 .footer-wrap {
@@ -16,11 +16,11 @@
 
 .footer__item {
   padding: 0.3em;
-  color: bisque;
+  color: $text-color-of-dark-background;
 }
 
 .footer__item-link {
-  color: bisque;
+  color: $text-color-of-dark-background;
 }
 
 .footer__social-items{

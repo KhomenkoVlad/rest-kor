@@ -5,11 +5,14 @@ import {
   Switch,
 } from 'react-router-dom'
 
-import { Header, HeaderHome } from './header/header';
+import { Header } from './header/header';
 import { Footer } from './footer/footer';
-import { Home } from './main/main';
+import { Home } from './home/home';
 import { SideNav } from './menu/sideNav/sideNav';
 import { Catalog } from './menu/catalog/catalog';
+import { About } from './about/about';
+
+import { ScriptRouter } from '../scripts/scriptsRouter';
 
 const Page = ({ children }) =>
   <>
@@ -19,10 +22,9 @@ const Page = ({ children }) =>
   </>
 
 const HomePage = () =>
-  <>
-    <HeaderHome />
+  <Page>
     <Home />
-  </>
+  </Page>
 
 const MenuPage = () =>
   <Page>
@@ -38,7 +40,7 @@ const MenuPage = () =>
 
 const AboutPage = () =>
   <Page>
-    <h1>AboutPage</h1>
+    <About />
   </Page>
 
 const ContactPage = () =>
@@ -54,4 +56,5 @@ export const App = () =>
     <Route path='/menu' component={MenuPage} />
     <Route exact path='/about' component={AboutPage} />
     <Route exact path='/contact' component={ContactPage} />
+    {ScriptRouter.backgroundScroll()}
   </BrowserRouter>
