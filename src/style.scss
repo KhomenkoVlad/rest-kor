@@ -39,8 +39,8 @@ body {
 
 .section-wraper {
   max-width: $full-width;
-  margin: auto;
-  padding: 1.3em 0.65em;
+  margin: 1.35em auto;
+  padding: 0 0.65em;
 }
 
 .caption{
@@ -70,4 +70,6 @@ body {
 @import "components/menu/catalog/catalog.scss";
 @import "components/menu/sideNav/sideNav.scss";
 @import "components/about/about.scss";
+@import "components/about/cook/cook.scss";
+@import "components/about/gallery/gallery.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");

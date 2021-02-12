@@ -9,3 +9,9 @@ export const mainImages = {
   menuBackgroundSoup,
   mainAboutImage,
 }
+
+import aboutCook from './images/cook.jpg';
+
+export const aboutImages = {
+  aboutCook,
+}

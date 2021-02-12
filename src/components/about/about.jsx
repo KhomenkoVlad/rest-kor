@@ -1,4 +1,6 @@
 import { mainImages } from '../../assets/images';
+import { Cook } from './cook/cook';
+import { Gallery } from './gallery/gallery';
 
 export const About = () =>
   <>
@@ -7,5 +9,7 @@ export const About = () =>
       <h1 className='about-background__capture'>О Нас</h1>
     </section>
     <main className='content about'>
+      <Cook />
+      <Gallery />
     </main>
   </>

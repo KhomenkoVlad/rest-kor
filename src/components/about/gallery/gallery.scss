@@ -1,0 +1,32 @@
+.about-gallery{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-auto-rows: 300px;
+  grid-gap: 1em;
+}
+
+.about-gallery__caption{
+  text-align: center;
+  //margin-top: 0;
+}
+
+.about-gallery__image{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: $middle-width) {
+  .about-gallery{
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    grid-auto-rows: 200px;
+  }
+}
+
+@media screen and (max-width: $minimal-width) {
+  .about-gallery{
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    grid-auto-rows: 100px;
+  }
+}
