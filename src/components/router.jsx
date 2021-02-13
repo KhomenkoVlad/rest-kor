@@ -11,6 +11,7 @@ import { Home } from './home/home';
 import { SideNav } from './menu/sideNav/sideNav';
 import { Catalog } from './menu/catalog/catalog';
 import { About } from './about/about';
+import { Contact } from './contact/contact';
 
 import { ScriptRouter } from '../scripts/scriptsRouter';
 
@@ -45,7 +46,7 @@ const AboutPage = () =>
 
 const ContactPage = () =>
   <Page>
-    <h1>ContactPage</h1>
+    <Contact />
   </Page>
 
 window.React = React;

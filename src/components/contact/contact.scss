@@ -1,0 +1,51 @@
+.contact {
+  padding: 0.1em 0;
+}
+
+.contact-locate__caption {
+  text-align: center;
+}
+
+.contact-locate {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-locate__info {
+  flex: 1 1 40%;
+}
+
+.contact-locate__map {
+  flex: 1 1 60%;
+  height: 500px;
+  width: 100%;
+}
+
+.contact-locate__list,
+.contact-order__list {
+  list-style: none;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.contact-locate__link,
+.contact-order__link {
+  color: #000;
+}
+
+.contact-order {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-locate {
+    flex-direction: column;
+  }
+  .contact-locate__map {
+    height: 300px;
+    width: 100%;
+  }
+  .contact-locate__info{
+    text-align: center;
+  }
+}

@@ -60,6 +60,16 @@ body {
   object-fit: cover;
 }
 
+.background-page-capture{
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: calc(2vw + 4em);
+  padding-bottom: calc(1vw + 3em);
+  margin: 0;
+  color: orange;
+}
+
 @import "components/header/header.scss";
 @import "components/footer/footer.scss";
 @import "components/home/home.scss";
@@ -72,4 +82,5 @@ body {
 @import "components/about/about.scss";
 @import "components/about/cook/cook.scss";
 @import "components/about/gallery/gallery.scss";
+@import "components/contact/contact.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
