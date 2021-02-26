@@ -41,7 +41,7 @@ export const Header = () => {
           <li className="navigation-lang">
             <div id='language-label' className="link navigation__item navigation__link navigation-lang__label">{currentLanguage}</div>
             <ul className="navigation-lang-list">
-              <button id='uk' className="link navigation-lang__item navigation-lang__item_active" onClick={() => changeLanguage("uk")}>UK</button>
+              <button id='uk' className="link navigation-lang__item" onClick={() => changeLanguage("uk")}>UK</button>
               <button id='ru' className="link navigation-lang__item" onClick={() => changeLanguage("ru")}>RU</button>
               <button id='en' className="link navigation-lang__item" onClick={() => changeLanguage("en")}>EN</button>
             </ul>
