@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = function (env) {
   let production = !env || env.NODE_ENV === 'production';
@@ -38,6 +39,19 @@ module.exports = function (env) {
         {
           test: /\.s[ac]ss$/,
           use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        },
+        {
+          test: /\.(json)$/,
+          type: "javascript/auto",
+          use: [
+            {
+              loader: "file-loader",
+              options: {
+                name: "[folder]/[name].[ext]",
+                outputPath: "assets/locales/"
+              }
+            }
+          ]
         }
       ]
     },
@@ -46,7 +60,18 @@ module.exports = function (env) {
       new HtmlWebpackPlugin({
         template: './src/index.html',
       }),
-      new CleanWebpackPlugin(),
+      //new CleanWebpackPlugin(),
+      new CopyPlugin(
+        {
+          patterns: [
+            {
+              toType: 'dir',
+              context: __dirname + '/src/assets',
+              from: 'locales/**',
+              to: __dirname + '/dist'
+            },
+          ]
+        }),
     ],
   };
   return config;
