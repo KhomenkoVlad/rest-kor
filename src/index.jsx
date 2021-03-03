@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import { App } from './components/router';
 import './scripts/i18n';
 
-let reactApp = document.createElement("div");
-reactApp.classList.add('app');
-document.body.prepend(reactApp);
+let rootApp = document.getElementById("root");
 
-ReactDOM.render(<App />, reactApp);
+ReactDOM.render(<App />, rootApp); 

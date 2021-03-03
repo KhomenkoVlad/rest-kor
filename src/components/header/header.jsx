@@ -1,9 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import React, { useEffect, useState } from 'react'
 
 export const Header = () => {
   const { t, i18n } = useTranslation();
-  let currentLanguage = localStorage.getItem('i18nextLng');
+  const [currentLanguage, setCurrentLanguage] = useState('uk');
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
@@ -19,15 +20,20 @@ export const Header = () => {
     thisButton.classList.add('navigation-lang__item_active');
   }
 
+  useEffect(() => {
+    if (i18n.languages) setCurrentLanguage(i18n.languages[0]);
+  });
+
   window.addEventListener('load', () => {
     const languageButtons = document.getElementsByClassName('navigation-lang__item');
     const languageInLocalStorage = localStorage.getItem('i18nextLng');
     for (let element of languageButtons) {
       if (languageInLocalStorage.includes(element.id)) {
+        console.log('load change', i18n.languages);
         changeLanguage(element.id);
         break;
       }
-    };
+    }
   });
 
   return (
