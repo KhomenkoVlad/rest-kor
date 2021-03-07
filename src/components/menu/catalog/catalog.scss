@@ -1,9 +1,33 @@
 .menu-catalog {
-  width: 70%;
-  height: 3000px;
+  flex: 70%;
+  background-color: white;
+  min-height: 100vh;
+  margin: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0px, auto));
+  grid-gap: 1em;
+  color: $text-color-of-dark-background;
+}
+
+.menu-catalog-item {
+  background-color: $dark-background-color;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.menu-catalog-item__image {
+  display: block;
+  width: 100%;
 }
 
 @media screen and (max-width: $middle-width) {
+  .menu-catalog {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0px, auto));
+  }
+}
+
+@media screen and (max-width: $minimal-width) {
   .menu-catalog {
     width: 100%;
   }

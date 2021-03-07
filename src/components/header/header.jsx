@@ -29,7 +29,6 @@ export const Header = () => {
     const languageInLocalStorage = localStorage.getItem('i18nextLng');
     for (let element of languageButtons) {
       if (languageInLocalStorage.includes(element.id)) {
-        console.log('load change', i18n.languages);
         changeLanguage(element.id);
         break;
       }
